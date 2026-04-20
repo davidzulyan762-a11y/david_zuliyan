@@ -169,20 +169,41 @@ margin:10px 0;
 text-align:center;
 }
 
-.contact a{
-display:inline-block;
-margin-top:15px;
-padding:14px 25px;
-background:#25D366;
+.social-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.social-buttons a{
+display:flex;
+align-items:center;
+gap:10px;
+padding:14px 22px;
+border-radius:40px;
 color:white;
 text-decoration:none;
-border-radius:40px;
 font-weight:bold;
 transition:0.3s;
 }
 
-.contact a:hover{
+.social-buttons a:hover{
 transform:scale(1.08);
+}
+
+.wa{
+background:#25D366;
+}
+
+.ig{
+background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+}
+
+.social-buttons img{
+width:24px;
+height:24px;
 }
 
 footer{
@@ -203,7 +224,6 @@ font-size:13px;
 font-weight:bold;
 margin-top:10px;
 }
-
 </style>
 </head>
 
@@ -234,59 +254,24 @@ margin-top:10px;
 
 <div class="grid" id="canvas">
 
-<div class="card">
-<h3>Customer Segments</h3>
-<p>UMKM, mahasiswa, content creator, Gen Z, toko online, startup lokal.</p>
-</div>
-
-<div class="card">
-<h3>Value Proposition</h3>
-<p>Desain cepat, harga terjangkau, hasil premium, kekinian, sesuai tren.</p>
-</div>
-
-<div class="card">
-<h3>Channels</h3>
-<p>Instagram, TikTok, WhatsApp, Facebook, Website, Marketplace.</p>
-</div>
-
-<div class="card">
-<h3>Customer Relationship</h3>
-<p>Fast response, konsultasi gratis, revisi ramah, membership client.</p>
-</div>
-
-<div class="card">
-<h3>Revenue Streams</h3>
-<p>Jasa desain, editing video, branding, jual template premium.</p>
-</div>
-
-<div class="card">
-<h3>Key Resources</h3>
-<p>Laptop, internet cepat, skill desain, Canva Pro, Adobe Suite.</p>
-</div>
-
-<div class="card">
-<h3>Key Activities</h3>
-<p>Desain konten, editing video, promosi digital, branding client.</p>
-</div>
-
-<div class="card">
-<h3>Key Partnerships</h3>
-<p>Influencer, UMKM, freelancer, percetakan, admin sosial media.</p>
-</div>
-
-<div class="card">
-<h3>Cost Structure</h3>
-<p>Internet, listrik, software premium, iklan, operasional bisnis.</p>
-</div>
+<div class="card"><h3>Customer Segments</h3><p>UMKM, mahasiswa, content creator, Gen Z, toko online, startup lokal.</p></div>
+<div class="card"><h3>Value Proposition</h3><p>Desain cepat, harga terjangkau, hasil premium, kekinian, sesuai tren.</p></div>
+<div class="card"><h3>Channels</h3><p>Instagram, TikTok, WhatsApp, Facebook, Website, Marketplace.</p></div>
+<div class="card"><h3>Customer Relationship</h3><p>Fast response, konsultasi gratis, revisi ramah, membership client.</p></div>
+<div class="card"><h3>Revenue Streams</h3><p>Jasa desain, editing video, branding, jual template premium.</p></div>
+<div class="card"><h3>Key Resources</h3><p>Laptop, internet cepat, skill desain, Canva Pro, Adobe Suite.</p></div>
+<div class="card"><h3>Key Activities</h3><p>Desain konten, editing video, promosi digital, branding client.</p></div>
+<div class="card"><h3>Key Partnerships</h3><p>Influencer, UMKM, freelancer, percetakan, admin sosial media.</p></div>
+<div class="card"><h3>Cost Structure</h3><p>Internet, listrik, software premium, iklan, operasional bisnis.</p></div>
 
 </div>
 
 <div class="gallery" id="gallery">
 <h2>Galeri Kreatif</h2>
 <div class="images">
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="">
-<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="">
-<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
 </div>
 </div>
 
@@ -299,10 +284,21 @@ margin-top:10px;
 
 <div class="contact" id="contact">
 <h2>Hubungi Sekarang</h2>
-<p>Butuh desain atau branding bisnis? Klik WhatsApp di bawah ini.</p>
-<a href="https://wa.me/6282162171103" target="_blank">
-Chat WhatsApp +6282162171103
+<p>Butuh desain atau branding bisnis? Klik kontak di bawah ini.</p>
+
+<div class="social-buttons">
+
+<a href="https://wa.me/6282162171103" target="_blank" class="wa">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+WhatsApp
 </a>
+
+<a href="https://instagram.com/dvidzlyann_" target="_blank" class="ig">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+@dvidzlyann_
+</a>
+
+</div>
 </div>
 
 </div>
